@@ -1,0 +1,229 @@
+body {
+    background-image: url(./Görseller/pexels-mahima-1250260.jpg);
+    
+   
+}
+
+.navbar {
+    background-color:rgba(42, 150, 0, 0.582);
+
+    filter: drop-shadow(4px 4px 4px black) ;
+    position: fixed;
+    z-index: 2;
+  
+   right: 0;
+}
+
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 21px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.navbar a:hover {
+    background-color: #3e8341;
+    font-style: bold;
+    animation-name: nb1;
+    animation-duration: 1s;
+}
+
+@keyframes nb1 {
+  from {background-color:rgba(57, 99, 52, 0.849) ;}
+  to {background-color: gray;}
+}
+
+.navbar a.aktif {
+    background-color: #3e8341;
+    color: white;
+}
+
+.paragraf-ana {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  z-index: 1;
+
+}
+
+
+.paragraf {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 17px;
+    z-index: 1;
+    
+}
+.yazi {
+    background-color: rgba(128, 128, 128, 0.199);
+    filter: drop-shadow(6px 6px 6px black);
+    position: absolute;
+    top: 25%;
+    left: 35%;
+    transform: translate(-50%, -150%);
+}
+
+.agac {
+    filter: drop-shadow(4px 4px 4px black);
+    display: inline-block;
+    height: 810px;
+    width: 100%;
+    overflow: hidden;
+    z-index: -1;
+   position: relative;
+
+}
+
+/* haberler */
+.sutun {
+    float: left ;
+    width: 30%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+.kart {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    
+  }
+.kutu {
+    padding: 0px 16px;
+  }
+  
+.kutu::after, .sira::after {
+    content: "";
+    clear: both;
+    display: table;
+    
+  }
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.452);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+.button:hover {
+    background-color: #555;
+  }
+
+.yazi-haberler {
+    background-color: rgba(128, 128, 128, 0.199);
+    filter: drop-shadow(6px 6px 6px black);
+    position: absolute;
+    top: 70px;
+    left:20px;
+    resize: none;
+    height: 730px;
+    width: 1100px;
+    
+  }
+
+
+/*iletisim*/
+.yazi-iletisim {
+  background-color: rgba(128, 128, 128, 0.199);
+  filter: drop-shadow(6px 6px 6px black);
+  position: absolute;
+  top: 10%;
+  left:10%;
+  resize: none;
+  height: 570px;
+  width: 600px;
+  position: fixed;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+ 
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.iletisim {
+  float: left;
+  width: 90%;
+  margin-top: 6px;
+  padding: 25px;
+}
+
+.buttonmsj {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.452);
+  text-align: center;
+  cursor: pointer;
+  width: 105%;
+}
+
+/*fotoğraflar*/
+
+.yazi-foto {
+  background-color: rgba(128, 128, 128, 0.199);
+  filter: drop-shadow(6px 6px 6px black);
+  margin:10px 150px;
+  transform: translate(1%, -145%);
+  position: fixed;
+  
+}
+
+.yazi-foto img{
+  width: 230px;
+  padding: 20px;
+  filter: grayscale(100%);
+  transition: 1s;
+  
+  
+}
+.yazi-foto img:hover {
+  filter:grayscale(0%);
+  transform: scale(1.1);
+  
+}
+
+/*Doğayı korumak*/
+.yazi-makale {
+  background-color: rgba(128, 128, 128, 0.199);
+  filter: drop-shadow(6px 6px 6px black);
+  position: absolute;
+  top: 25%;
+  left: 35%;
+  transform: translate(-50%, -110%);
+}
+
+
+
+
+
